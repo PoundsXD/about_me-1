@@ -5,9 +5,21 @@ var correct = 0;
 
 var animalLike = prompt ('Do you think I have a dog?');
 var animalLike1 = animalLike.toUpperCase();
-
 console.log(animalLike1);
-if(animalLike1 === 'YES' || 'Y' === animalLike1){
+function animalName() {
+  var animalLike = prompt ('Do you think I have a dog?');
+  console.log(animalLike);
+  if((animalLike.toUpperCase() === 'YES') || (animalLike.toUpperCase() === 'Y')){
+    alert('You got it right.');
+    correct++;
+  } else if((animalLike.toUpperCase() === 'N') || (animalLike.toUpperCase() === 'NO')){
+    alert('You got it wrong.');
+  } else {
+    alert('This is a question damnit!');
+  }
+}
+animalName();
+/*if(animalLike1 === 'YES' || 'Y' === animalLike1){
   alert('yes I use to have golden');
   correct++;
 } else if (animalLike1 === 'NO' || 'N' === animalLike1) {
@@ -19,10 +31,10 @@ if(animalLike1 === 'YES' || 'Y' === animalLike1){
 var cook = prompt ('Do you think I use to be a professional Chef?');
 var cook1 = cook.toUpperCase();
 
-console.log(cook1);
+/*console.log(cook1);
 if(cook1 === 'YES' || 'Y' === cook1){
   alert('yes I use to be professional chef!');
-  correct++
+  correct++;
 } else if (cook1 === 'NO' || 'N' === cook1) {
   alert ('no? how do you think I cook for myself?');
 } else {
@@ -99,4 +111,4 @@ for (var i = 6; i > 0 ; i--) {
   }
 }
 
-console.log(correct);
+console.log(correct);*/
