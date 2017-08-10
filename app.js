@@ -83,6 +83,7 @@ function guessNumQues() {
     if (guessAgeAnswer == 30){
       alert('YAH YAH YOU GUESSED CORRECTLY!!');
       correct++;
+      break;
     } else if(guessAgeAnswer < 30){
       alert('you are too low');
     } else if(guessAgeAnswer > 30){
@@ -101,6 +102,7 @@ function food() {
     if (food === myArray[0] || food === myArray[1] || food === myArray[2]){
       alert ('this is correct!');
       correct++;
+      break;
     } else {
       alert ('wrong answer!');
     }
