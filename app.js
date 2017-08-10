@@ -3,7 +3,7 @@ var correct = 0;
 
 //question1 dog owner
 
-var animalLike = prompt ('Do you think I have a dog?');
+/*var animalLike = prompt ('Do you think I have a dog?');
 var animalLike1 = animalLike.toUpperCase();
 console.log(animalLike1);
 function animalName() {
@@ -26,13 +26,23 @@ animalName();
   alert ('NO why how could you?');
 } else {
   alert ('this is a yes or no question dammit');
-};
-//question2 professional cook
-var cook = prompt ('Do you think I use to be a professional Chef?');
-var cook1 = cook.toUpperCase();
+};*/
 
-/*console.log(cook1);
-if(cook1 === 'YES' || 'Y' === cook1){
+//second question
+function cook() {
+  var cook1 = prompt ('Do you think I use to be a professional chef?');
+  console.log(cook1);
+  if((cook1.toUpperCase() === 'YES') || (cook1.toUpperCase() === 'Y')){
+    alert('You got it right.');
+    correct++;
+  } else if((cook1.toUpperCase() === 'N') || (cook1.toUpperCase() === 'NO')){
+    alert('You got it wrong.');
+  } else {
+    alert('This is a question damnit!');
+  }
+}
+cook();
+/*if(cook1 === 'YES' || 'Y' === cook1){
   alert('yes I use to be professional chef!');
   correct++;
 } else if (cook1 === 'NO' || 'N' === cook1) {
