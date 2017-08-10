@@ -128,9 +128,28 @@ if( writtingHand1 === 'YES' || 'Y' === writtingHand1){
 } else {
   alert('PLEASE STICK TO YES OR NO ANSWERS!!!');
 };*/
-
+function guessNumQues() {
+  var i = 0;
+  for(i = 0; i < 4; i++){
+    var guessNum = prompt ('Can you guess my age?');
+    console.log(guessNum);
+    var guessAgeAnswer = guessNum;
+    console.log(guessAgeAnswer);
+    if (guessAgeAnswer == 30){
+      alert('YAH YAH YOU GUESSED CORRECTLY!!');
+      correct++;
+    } else if(guessAgeAnswer < 30){
+      alert('you are too low');
+    } else if(guessAgeAnswer > 30){
+      alert('you are too high');
+    } else if(guessAgeAnswer >= 28){
+      alert('you are getting close');
+    }
+  }
+}
+guessNumQues();
 //question 6
-var i = 0;
+/*var i = 0;
 for(i = 0; i < 4; i++){
   var guessAge = prompt('Can you guess my age?');
   var guessAgeAnswer = guessAge;
