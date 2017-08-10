@@ -49,10 +49,22 @@ cook();
   alert ('no? how do you think I cook for myself?');
 } else {
   alert('THIS is a YES OR NO QUESTION DAMMIT!!!!');
+}*/
+function military() {
+  var military1 = prompt ('Do you think I use to be in the military?');
+  console.log(military1);
+  if((military1.toUpperCase() === 'YES') || (military1.toUpperCase() === 'Y')){
+    alert('You got it right.');
+    correct++;
+  } else if((military1.toUpperCase() === 'N') || (military1.toUpperCase() === 'NO')){
+    alert('You got it wrong.');
+  } else {
+    alert('This is a question damnit!');
+  }
 }
-
+military();
 //question3 military service
-var military = prompt ('Do you think I use to be in the military?');
+/*var military = prompt ('Do you think I use to be in the military?');
 var military1 = military.toUpperCase();
 
 console.log(military1);
