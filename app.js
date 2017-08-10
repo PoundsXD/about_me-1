@@ -102,9 +102,21 @@ if( nation1 === 'YES' || 'Y' === nation1 ){
 } else {
   alert('PLEASE STICK TO YES OR NO ANSWERS!!!');
 };*/
-
+function writtingHand() {
+  var writtingHand1 = prompt ('Did you know that I write with my right hand?');
+  console.log(writtingHand1);
+  if((writtingHand1.toUpperCase() === 'YES') || (writtingHand1.toUpperCase() === 'Y')){
+    alert('You got it right.');
+    correct++;
+  } else if((writtingHand1.toUpperCase() === 'N') || (writtingHand1.toUpperCase() === 'NO')){
+    alert('You got it wrong.');
+  } else {
+    alert('This is a question damnit!');
+  }
+}
+writtingHand();
 //question 5 did you know I am right handed
-var writtingHand = prompt ('Did you know that I write with my right hand?');
+/*var writtingHand = prompt ('Did you know that I write with my right hand?');
 var writtingHand1 = writtingHand.toUpperCase();
 
 console.log(writtingHand1);
@@ -115,7 +127,7 @@ if( writtingHand1 === 'YES' || 'Y' === writtingHand1){
   alert ('No, well Im certainly not left handed!');
 } else {
   alert('PLEASE STICK TO YES OR NO ANSWERS!!!');
-};
+};*/
 
 //question 6
 var i = 0;
