@@ -75,9 +75,22 @@ if( military1 === 'YES' || 'Y' === military1){
   alert ('No? so you think i was a bum huh?');
 } else {
   alert('PLEASE STICK TO YES OR NO ANSWERS!!!');
-};
+};*/
+function nation() {
+  var nation1 = prompt ('Did you know my family is from Taiwan?');
+  console.log(nation1);
+  if((nation1.toUpperCase() === 'YES') || (nation1.toUpperCase() === 'Y')){
+    alert('You got it right.');
+    correct++;
+  } else if((nation1.toUpperCase() === 'N') || (nation1.toUpperCase() === 'NO')){
+    alert('You got it wrong.');
+  } else {
+    alert('This is a question damnit!');
+  }
+}
+nation();
 //question4 my nationality
-var nation = prompt ('Did you know that my family is from Taiwan?');
+/*var nation = prompt ('Did you know that my family is from Taiwan?');
 var nation1 = nation.toUpperCase();
 
 console.log(military1);
@@ -88,7 +101,7 @@ if( nation1 === 'YES' || 'Y' === nation1 ){
   alert ('No? so where the hell did you think I was from?');
 } else {
   alert('PLEASE STICK TO YES OR NO ANSWERS!!!');
-};
+};*/
 
 //question 5 did you know I am right handed
 var writtingHand = prompt ('Did you know that I write with my right hand?');
